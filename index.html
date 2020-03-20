@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts Student form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header id="head">
+        <h1 id="title">Hogwarts feedback scroll</h1>
+        <p id="description"><u>Feeback is a magical thing, and we value magic.</u></p>
+    </header>
+
+    <form id="survey-form" autocomplete="off">
+        <div class="form-elem">
+            <label for="name" id="name-label">Name:</label><br>
+            <input id="name" placeholder="Tell us your name?" name="name" type="text"  required>
+
+        </div>
+
+        <div class="form-elem">
+            <label for="email" id="email-label">Email:</label><br>
+            <input id="email"  placeholder="Give us your e-mail, muggle?" name="email" type="email" required>
+
+        </div>
+
+        <div class="form-elem">
+            <label for="year" id="number-label">School year:</label><br>
+            <input id="number" placeholder="which year are you in?" name="school-year" type="number" min="1" max="7" >
+
+        </div>
+
+        <hr>
+
+        <div class="form-elem">
+            <label for="dropdown">What kind of pet do you own?</label>
+            <select id="dropdown" name="pets">
+                <option value="">select your pet's kind</option>
+                <option value="owl">Owl</option>
+                <option value="cat">Cat</option>
+                <option value="rat">Rat</option>
+                <option value="other">Other</option>
+                <option value="not sure">Not Sure</option>
+            </select>
+        </div>
+
+        <fieldset class="form-elem">
+            <legend>Choose your Hogwarts's House:</legend>
+
+            <ul style="list-style-type: none; text-indent: -30px;">
+                <li><input id="gryffindor" type="radio" name="house" value="gryffindor">
+                    <label for="gryffindor">Gryffindor</label>
+
+                </li>
+
+                <li> <input type="radio" id="hufflepuff" name="house" value="hufflepuff">
+                    <label for="hufflepuff">Hufflepuff</label>
+
+                </li>
+
+                <li><input type="radio" name="house" id="slytherin" value="slytherine">
+                    <label for="slytherin">Slytherin</label>
+
+                </li>
+
+                <li><input type="radio" name="house" id="ravenclaw" value="ravenclaw">
+                    <label for="ravenclaw">Ravenclaw</label>
+
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset class="form-elem">
+            <legend>Select your favourite subjects(min 3):</legend>
+
+            <ul style="list-style-type: none; text-indent: -30px;">
+                <li><input type="checkbox" name="subject" id="dada" value="DADA">
+                    <label for="dada">Defence Againt Dark Arts</label>
+
+                </li>
+
+                <li><input type="checkbox" name="subject" id="trans" value="transfiguration">
+                    <label for="trans">Transfiguration</label>
+
+                </li>
+
+                <li> <input type="checkbox" name="subject" id="charms" value="charms">
+                    <label for="charms">Charms</label>
+
+                </li>
+
+                <li> <input id="animals" name="subjects" type="checkbox" value="care of magical creatures">
+                    <label for="animals">Care of Magical Creatures</label>
+
+                </li>
+
+                <li><input id="herbo" type="checkbox" name="subjects" value="herbology">
+                    <label for="herbo">Herbology</label>
+
+                </li>
+
+                <li><input type="checkbox" name="subjects" id="snape" value="potions">
+                    <label for="snape">Potions</label>
+
+                </li>
+
+                <li><input type="checkbox" name="subjects" id="divi" value="divination">
+                    <label for="divi">Divination</label>
+
+                </li>
+
+                <li><input type="checkbox" name="subjects" id="astro" value="astrology">
+                    <label for="astro">Astrology</label>
+
+                </li>
+            </ul>
+        </fieldset>
+
+        <hr>
+
+        <textarea class="form-elem" name="comments" id="comments" cols="100" rows="8">Give any additional feedback here.</textarea>
+        <br>
+        <button type="submit" id="submit">SUBMIT</button>
+    </form>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
